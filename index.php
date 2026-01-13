@@ -27,6 +27,35 @@
       background-color: var(--primary-dark);
     }
 
+    .left {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary-blue));
+      color: white;
+    }
+
+    .left h1 span {
+      color: #c7d2fe;
+    }
+
+    .btn-main {
+      background-color: white;
+      color: var(--primary-dark);
+      border-radius: 30px;
+      padding: 10px 30px;
+      font-weight: 500;
+    }
+
+    .btn-main:hover {
+      background-color: var(--accent);
+    }
+
+    footer {
+      background-color: var(--primary-dark);
+      color: white;
+      padding: 15px 0;
+    }
   </style>
 </head>
 <body>
@@ -49,6 +78,26 @@
   </div>
 </nav>
 
+<!-- left Section -->
+<section class="left">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <div class="col-md-6 text-md-start text-center mb-4 mb-md-0">
+        <p class="text-uppercase small">Hi There! I'm</p>
+        <h1 class="display-4 fw-bold">Dan Mark Javier</h1>
+        <h4 class="mb-3">UI/UX Designer</h4>
+        <p class="lead">
+          Welcome to my Portfolio website, enjoy visiting my works<br>
+          related to web development and UI/UX design.
+        </p>
+        <a href="projects.php" class="btn btn-main mt-3">View My Work</a>
+      </div>
+
+
+    </div>
+  </div>
+</section>
 
 <!-- Footer -->
 <footer class="text-center">
