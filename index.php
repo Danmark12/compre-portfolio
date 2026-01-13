@@ -1,4 +1,4 @@
-<?php /* index.php - Home Page */ ?>
+<?php?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,7 +30,7 @@
       background-color: var(--primary-dark);
     }
 
-    .hero {
+    .left {
       min-height: 90vh;
       display: flex;
       align-items: center;
@@ -38,7 +38,7 @@
       color: white;
     }
 
-    .hero h1 span {
+    .left h1 span {
       color: #c7d2fe;
     }
 
@@ -108,7 +108,7 @@
 </nav>
 
 <!-- Hero Section -->
-<section class="hero">
+<section class="left">
   <div class="container">
     <div class="row align-items-center">
 
