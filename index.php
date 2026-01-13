@@ -20,18 +20,28 @@
       --accent: #e8f0ff;
     }
 
-    body {
+    html, body {
+      height: 100%; /* Ensure full height */
+      margin: 0;
+      padding: 0;
       font-family: 'Poppins', sans-serif;
       background-color: var(--light-bg);
       color: #333;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* Ensure footer stays at bottom */
     }
 
     .navbar {
       background-color: var(--primary-dark);
     }
 
+    /* left Section */
     .left {
-      min-height: 90vh;
+      flex: 1; /* Take remaining space */
       display: flex;
       align-items: center;
       background: linear-gradient(135deg, var(--primary-dark), var(--primary-blue));
@@ -48,6 +58,7 @@
       border-radius: 30px;
       padding: 10px 30px;
       font-weight: 500;
+      transition: background 0.3s;
     }
 
     .btn-main:hover {
@@ -58,6 +69,7 @@
       background-color: var(--primary-dark);
       color: white;
       padding: 15px 0;
+      text-align: center;
     }
 
     .profile-wrapper {
@@ -70,6 +82,7 @@
       justify-content: center;
       box-shadow: 0 30px 60px rgba(0,0,0,0.35);
       animation: float 4s ease-in-out infinite;
+      margin: 0 auto;
     }
 
     .profile-img {
@@ -107,7 +120,7 @@
   </div>
 </nav>
 
-<!-- Hero Section -->
+<!-- left Section -->
 <section class="left">
   <div class="container">
     <div class="row align-items-center">
@@ -125,9 +138,9 @@
 
       <!-- Right Image -->
       <div class="col-md-6 text-center">
-        <div class="profile-wrapper mx-auto">
-        <img src="img/a.png" alt="Dan Mark Javier" class="img-fluid profile-img">
-      </div>
+        <div class="profile-wrapper">
+          <img src="img/a.png" alt="Dan Mark Javier" class="img-fluid profile-img">
+        </div>
       </div>
 
     </div>
@@ -135,7 +148,7 @@
 </section>
 
 <!-- Footer -->
-<footer class="text-center">
+<footer class="text-center mt-auto">
   <p class="mb-0">&copy; 2026 Dan Portfolio</p>
 </footer>
 
