@@ -28,6 +28,47 @@
       background-color: var(--primary-dark);
     }
 
+    .about-container {
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .about-container h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .about-container p {
+      max-width: 600px;
+      margin: 0 auto 20px auto;
+      line-height: 1.7;
+      color: #b9c7ff;
+    }
+
+    .skills-canvas {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .skill-badge {
+      background: rgba(255, 255, 255, 0.15);
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 30px;
+      margin: 5px;
+      display: inline-block;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      background-color: var(--primary-dark);
+      color: #aaa;
+      padding: 15px 0;
+      text-align: center;
+      margin-top: 50px;
+    }
   </style>
 </head>
 <body>
@@ -50,6 +91,24 @@
   </div>
 </nav>
 
+<!-- About Section -->
+<section class="about-container">
+  <h1>About Me</h1>
+  <p>Hello! I'm <strong>Dan Mark Javier</strong>, a BSIT student and aspiring web developer UI/UX Designer. I enjoy creating clean, user-centered digital experiences and designing intuitive web interfaces.</p>
+  <p>I focus on web development, responsive design, and user experience improvements. I also explore modern tools and techniques to enhance my designs and skills.</p>
+
+  <h3>Skills</h3>
+  <div class="skills-canvas">
+    <span class="skill-badge">HTML</span>
+    <span class="skill-badge">CSS</span>
+    <span class="skill-badge">JavaScript</span>
+    <span class="skill-badge">Bootstrap</span>
+    <span class="skill-badge">UI/UX Design</span>
+    <span class="skill-badge">Figma</span>
+    <span class="skill-badge">canva</span>
+
+  </div>
+</section>
 
 <!-- Footer -->
 <footer>
