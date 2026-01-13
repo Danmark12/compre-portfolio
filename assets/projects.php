@@ -129,6 +129,15 @@
     </div>
   </div>
 
+  <!-- NutriMap -->
+  <div class="project-card">
+    <img src="../img/nutrimap.png" alt="NutriMap Project">
+    <div class="project-info">
+      <h5>NutriMap</h5>
+      <p>A web-based health and nutrition data management system with GIS integration for city nutrition offices to track reports and barangay data.</p>
+      <a href="https://nutrimap.42web.io" target="_blank" class="btn-project">View Project</a>
+    </div>
+  </div>
 </section>
 
 <!-- Footer -->
