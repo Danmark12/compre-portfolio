@@ -1,4 +1,4 @@
-<?php?>
+<?php /* assets/contact.php */ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,27 +9,115 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Google Font -->
+  <!-- Google Font & Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
   <style>
     :root {
       --primary-dark: #0a1a33;
       --primary-blue: #1f3c88;
-      --light-bg: #ffffff;
       --accent: #e8f0ff;
+      --text-main: #e6e9f0;
+      --text-muted: #b9c7ff;
     }
 
     body {
       font-family: 'Poppins', sans-serif;
-      background-color: var(--light-bg);
-      color: #333;
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary-blue));
+      color: var(--text-main);
     }
 
-    .navbar {
+    .navbar { background-color: var(--primary-dark); }
+
+    /* Header */
+    .contact-header {
+      text-align: center;
+      padding-top: 120px;
+      margin-bottom: 30px;
+    }
+    .contact-header h1 { font-size: 2.8rem; margin-bottom: 8px; }
+    .contact-header p { color: var(--text-muted); font-size: 1rem; }
+
+    /* Contact Section */
+    .contact-section {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+      flex-wrap: wrap;
+      padding: 0 50px 60px;
+    }
+
+    .contact-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      flex: 1;
+      min-width: 240px;
+    }
+
+    .contact-card {
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      text-align: center;
+      padding: 15px 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .contact-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+    }
+
+    .contact-card i {
+      font-size: 1.8rem;
+      color: var(--accent);
+      margin-bottom: 6px;
+      transition: color 0.3s;
+    }
+    .contact-card:hover i { color: #fff; }
+
+    .contact-card h5 {
+      margin-bottom: 4px;
+      font-size: 1.1rem;
+      color: var(--accent);
+    }
+
+    .contact-card p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin: 0;
+    }
+
+    /* Map */
+    .map-container {
+      flex: 2;
+      min-width: 280px;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 15px 45px rgba(0,0,0,0.4);
+    }
+    .map-container iframe {
+      width: 100%;
+      height: 450px;
+      border: none;
+    }
+
+    footer {
       background-color: var(--primary-dark);
+      color: #aaa;
+      padding: 15px 0;
+      text-align: center;
     }
 
+    @media(max-width: 992px) {
+      .contact-section {
+        flex-direction: column;
+        align-items: center;
+      }
+      .map-container iframe { height: 350px; }
+    }
   </style>
 </head>
 <body>
@@ -43,22 +131,58 @@
     </button>
     <div class="collapse navbar-collapse" id="navMenu">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link active" href=",,/index.php">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.php">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="projects.php">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.php">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="../assets/about.php">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="../assets/projects.php">Projects</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.php">Contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
+<!-- Header -->
+<section class="contact-header">
+  <h1>Contact Me</h1>
+  <p>Reach out via social media, phone, email, or visit me!</p>
+</section>
+
+<!-- Contact Section -->
+<section class="contact-section">
+  <!-- Contact Info Cards (Left) -->
+  <div class="contact-cards">
+    <a href="https://www.facebook.com/share/14V2pLJFBZG/" target="_blank" class="contact-card text-decoration-none">
+      <i class="fab fa-facebook"></i>
+      <h5>Facebook</h5>
+      <p>Dan Mark</p>
+    </a>
+
+    <a href="https://www.instagram.com/_imdanmark?igsh=dGpxMGhueHV6ZjVv" target="_blank" class="contact-card text-decoration-none">
+      <i class="fab fa-instagram"></i>
+      <h5>Instagram</h5>
+      <p>_imdanmark</p>
+    </a>
+
+    <a href="mailto:yourname@email.com" class="contact-card text-decoration-none">
+      <i class="fas fa-envelope"></i>
+      <h5>Email</h5>
+      <p>danmarkpetalcurin@email.com</p>
+    </a>
+
+    <a href="tel:+639123456789" class="contact-card text-decoration-none">
+      <i class="fas fa-phone"></i>
+      <h5>Phone</h5>
+      <p>+63 975 837 5471</p>
+    </a>
+  </div>
+
+
+</section>
 
 <!-- Footer -->
-<footer class="text-center">
-  <p class="mb-0">&copy; 2026 Dan Portfolio</p>
+<footer>
+  &copy; 2026 Dan Portfolio
 </footer>
 
-<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

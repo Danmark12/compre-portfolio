@@ -1,4 +1,4 @@
-<?php /* assets/projects.php */ ?>
+<?php?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -103,9 +103,9 @@
     <div class="collapse navbar-collapse" id="navMenu">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="../index.php">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="../assets/about.php">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.php">About</a></li>
         <li class="nav-item"><a class="nav-link active" href="projects.php">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="../contact.php">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
       </ul>
     </div>
   </div>
