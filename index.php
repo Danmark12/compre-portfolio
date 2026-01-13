@@ -1,4 +1,4 @@
-<?php ?>
+<?php /* index.php - Home Page */ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dan | Home</title>
 
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
@@ -27,7 +30,7 @@
       background-color: var(--primary-dark);
     }
 
-    .left {
+    .hero {
       min-height: 90vh;
       display: flex;
       align-items: center;
@@ -35,7 +38,7 @@
       color: white;
     }
 
-    .left h1 span {
+    .hero h1 span {
       color: #c7d2fe;
     }
 
@@ -55,6 +58,32 @@
       background-color: var(--primary-dark);
       color: white;
       padding: 15px 0;
+    }
+
+    .profile-wrapper {
+      width: 460px;
+      height: 460px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary-blue), #3f5efb);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.35);
+      animation: float 4s ease-in-out infinite;
+    }
+
+    .profile-img {
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 6px solid white;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+      100% { transform: translateY(0); }
     }
   </style>
 </head>
@@ -78,22 +107,28 @@
   </div>
 </nav>
 
-<!-- left Section -->
-<section class="left">
+<!-- Hero Section -->
+<section class="hero">
   <div class="container">
     <div class="row align-items-center">
 
+      <!-- Left Content -->
       <div class="col-md-6 text-md-start text-center mb-4 mb-md-0">
-        <p class="text-uppercase small">Hi There! I'm</p>
-        <h1 class="display-4 fw-bold">Dan Mark Javier</h1>
-        <h4 class="mb-3">UI/UX Designer</h4>
-        <p class="lead">
-          Welcome to my Portfolio website, enjoy visiting my works<br>
-          related to web development and UI/UX design.
+        <p class="text-uppercase small opacity-75">Hi There! I'm</p>
+        <h1 class="fw-bold" style="font-size:2.8rem;">Dan Mark Javier</h1>
+        <h4 class="mb-2" style="font-size:1.3rem; font-weight:400;">UI/UX Designer</h4>
+        <p style="font-size:1rem; max-width:420px;">
+          Welcome to my Portfolio website, enjoy visiting my works related to web development and UI/UX design.
         </p>
         <a href="projects.php" class="btn btn-main mt-3">View My Work</a>
       </div>
 
+      <!-- Right Image -->
+      <div class="col-md-6 text-center">
+        <div class="profile-wrapper mx-auto">
+        <img src="img/a.png" alt="Dan Mark Javier" class="img-fluid profile-img">
+      </div>
+      </div>
 
     </div>
   </div>
