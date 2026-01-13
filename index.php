@@ -99,9 +99,9 @@
     <div class="collapse navbar-collapse" id="navMenu">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link active" href="index.php">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.php">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="projects.php">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="assets/about.php">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="assets/projects.php">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="assets/contact.php">Contact</a></li>
       </ul>
     </div>
   </div>
@@ -120,7 +120,7 @@
         <p style="font-size:1rem; max-width:420px;">
           Welcome to my Portfolio website, enjoy visiting my works related to web development and UI/UX design.
         </p>
-        <a href="projects.php" class="btn btn-main mt-3">View My Work</a>
+        <a href="assets/projects.php" class="btn btn-main mt-3">View My Work</a>
       </div>
 
       <!-- Right Image -->
