@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dan | About</title>
 
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
@@ -22,52 +22,109 @@
       font-family: 'Poppins', sans-serif;
       background: linear-gradient(135deg, var(--primary-dark), var(--primary-blue));
       color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
 
+    /* Navbar */
     .navbar {
       background-color: var(--primary-dark);
     }
 
+    /* About Section */
     .about-container {
-      padding: 100px 20px;
+      padding: 120px 20px 60px;
       text-align: center;
+      flex: 1;
     }
 
     .about-container h1 {
-      font-size: 2.5rem;
+      font-size: 2.6rem;
+      font-weight: 600;
       margin-bottom: 20px;
     }
 
     .about-container p {
-      max-width: 600px;
-      margin: 0 auto 20px auto;
-      line-height: 1.7;
-      color: #b9c7ff;
+      max-width: 700px;
+      margin: 0 auto 18px auto;
+      line-height: 1.8;
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+
+    /* Skills */
+    .skills-title {
+      margin-top: 40px;
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+      font-weight: 500;
     }
 
     .skills-canvas {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      margin-top: 20px;
+      gap: 10px;
     }
 
     .skill-badge {
       background: rgba(255, 255, 255, 0.15);
       color: #fff;
-      padding: 10px 20px;
+      padding: 10px 22px;
       border-radius: 30px;
-      margin: 5px;
-      display: inline-block;
       font-size: 0.95rem;
+      transition: transform 0.2s, background 0.2s;
     }
 
+    .skill-badge:hover {
+      transform: translateY(-3px);
+      background: rgba(255, 255, 255, 0.25);
+    }
+
+    /* Footer */
     footer {
       background-color: var(--primary-dark);
       color: #aaa;
       padding: 15px 0;
       text-align: center;
-      margin-top: 50px;
+    }
+
+    /*  RESPONSIVE DESIGN */
+
+    @media (max-width: 768px) {
+
+      .about-container h1 {
+        font-size: 2.1rem;
+      }
+
+      .about-container p {
+        font-size: 0.95rem;
+      }
+
+      .skills-title {
+        font-size: 1.3rem;
+      }
+
+      .skill-badge {
+        padding: 8px 18px;
+        font-size: 0.9rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+
+      .about-container {
+        padding-top: 100px;
+      }
+
+      .about-container h1 {
+        font-size: 1.9rem;
+      }
+
+      .about-container p {
+        font-size: 0.9rem;
+      }
     }
   </style>
 </head>
@@ -94,10 +151,21 @@
 <!-- About Section -->
 <section class="about-container">
   <h1>About Me</h1>
-  <p>Hello! I'm <strong>Dan Mark Javier</strong>, a BSIT student and aspiring web developer UI/UX Designer. I enjoy creating clean, user-centered digital experiences and designing intuitive web interfaces.</p>
-  <p>I focus on web development, responsive design, and user experience improvements. I also explore modern tools and techniques to enhance my designs and skills.</p>
 
-  <h3>Skills</h3>
+  <p>
+    Hello! I'm <strong>Dan Mark Javier</strong>, a BSIT student and aspiring
+    <strong>Web Developer & UI/UX Designer</strong>. I enjoy creating clean,
+    user-centered digital experiences and designing intuitive web interfaces.
+  </p>
+
+  <p>
+    I focus on responsive web development, modern UI design, and improving user
+    experience through simple and effective layouts. I continuously explore new
+    tools and technologies to grow my skills.
+  </p>
+
+  <div class="skills-title">Skills</div>
+
   <div class="skills-canvas">
     <span class="skill-badge">HTML</span>
     <span class="skill-badge">CSS</span>
@@ -105,8 +173,7 @@
     <span class="skill-badge">Bootstrap</span>
     <span class="skill-badge">UI/UX Design</span>
     <span class="skill-badge">Figma</span>
-    <span class="skill-badge">canva</span>
-
+    <span class="skill-badge">Canva</span>
   </div>
 </section>
 
